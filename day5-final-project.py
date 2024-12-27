@@ -12,6 +12,16 @@ letters = ['a','b','c','d','e','f','g','h','i',
 
 numbers = ['0','1','2','3','4','5','6','7','8','9']
 
+letters_loop = []
+numbers_loop = []
+
+for i in range(ord('A'), ord('Z')+1):
+    letters_loop.append(chr(i))
+for i in range(ord('a'), ord('z')+1):
+    letters_loop.append(chr(i))
+for i in range(0,10):
+    numbers_loop.append(str(i))
+
 print('Welcome to Passwords Generator!')
 
 # num_up_letters = int(input('How many Up Letters?'))
@@ -54,11 +64,11 @@ num_numbers = int(input('How many Numbers?'))
 password_list = []
 
 for letter in range(0,num_letters):
-    password_list.append(random.choice(letters))
+    password_list.append(random.choice(letters_loop))
 for s in range(0,num_symbols):
     password_list.append(random.choice(symbols))
 for num in range(0,num_numbers):
-    password_list.append(random.choice(numbers))
+    password_list.append(random.choice(numbers_loop))
 
 random.shuffle(password_list)
 
