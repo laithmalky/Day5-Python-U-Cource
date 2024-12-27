@@ -60,8 +60,13 @@ for s in range(0,num_symbols):
 for num in range(0,num_numbers):
     password_list.append(random.choice(numbers))
 
-# word = random.shuffle(password)
-print(password_list)
+random.shuffle(password_list)
+
+word_list =''
+for char in password_list:
+    word_list += char
+
+print(word_list)
 
 
 # Up letters
