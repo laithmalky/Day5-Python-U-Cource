@@ -21,3 +21,13 @@ sum = 0
 for score in student_score:
     sum += score
 print(sum)
+
+
+max_score = 0
+for score in student_score:
+    if score >= max_score:
+        max_score = score
+
+print(max_score)
+
+print(max(student_score))
