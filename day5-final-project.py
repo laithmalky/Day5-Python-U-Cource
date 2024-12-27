@@ -24,9 +24,6 @@ num_numbers = int(input('How many Numbers?'))
 # low_word = random.randint(ord('a'), ord('z'))
 # print(chr(word))
 
-# easy level
-password = ""
-
 # for n in range(0,num_letters):
 #     password.append(letters[random.randint(0,len(letters)-1)])
 # for l in range(0,num_symbols):
@@ -34,15 +31,38 @@ password = ""
 # for i in range(0,num_numbers):
 #     password.append(numbers[random.randint(0,len(numbers)-1)])
 
-for letter in range(0,num_letters):
-    password += random.choice(letters)
-for s in range(0,num_symbols):
-    password += random.choice(symbols)
-for num in range(0,num_numbers):
-    password += random.choice(numbers)
 
-word = random.shuffle(password)
-print(word)
+# Easy level
+
+# password = ""
+
+# for letter in range(0,num_letters):
+#     password += random.choice(letters)
+# for s in range(0,num_symbols):
+#     password += random.choice(symbols)
+# for num in range(0,num_numbers):
+#     password += random.choice(numbers)
+
+# word = random.shuffle(password)
+# print(word)
+
+
+
+
+# Hard level
+
+password_list = []
+
+for letter in range(0,num_letters):
+    password_list.append(random.choice(letters))
+for s in range(0,num_symbols):
+    password_list.append(random.choice(symbols))
+for num in range(0,num_numbers):
+    password_list.append(random.choice(numbers))
+
+# word = random.shuffle(password)
+print(password_list)
+
 
 # Up letters
 # for letter in range(ord('A'), ord('Z')+1):
