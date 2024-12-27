@@ -76,7 +76,7 @@ word_list =''
 for char in password_list:
     word_list += char
 
-print(word_list)
+print(f"Your Password is: {word_list}")
 
 
 # Up letters
